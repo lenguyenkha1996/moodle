@@ -94,7 +94,7 @@ class qformat_word extends qformat_default {
                     $nextline = trim($lines[$line_index + 1]); 
                     // echo "DienDL: " . $nextline;
                     if (!preg_match('/^TAGS:/', $nextline)) {
-                        echo "Không có tags cho câu hỏi " . $question->questiontext. "Không thêm vô luôn\n";
+                        echo "Không có tags cho câu hỏi: " . $question->questiontext. ' ' . "Không thêm vô được." . '<br>';
                         
                         // Add question without TAGS
                         // $questions[] = $question;
