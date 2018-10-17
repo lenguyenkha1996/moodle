@@ -9,10 +9,10 @@ $string['addfunctions'] = 'Tải tệp lên';
 // tiêu đề editform
 $string['tieudematdinh']='Tải tệp lên';
 $string['noidungmatdinh']='Đây là nội dung mặt định';
-$string['headerconfig'] = 'one';
-$string['descconfig'] = 'two';
-$string['labelallowhtml']='three';
-$string['descallowhtml'] = 'say hello';
+// $string['headerconfig'] = 'one';
+// $string['descconfig'] = 'two';
+// $string['labelallowhtml']='three';
+// $string['descallowhtml'] = 'say hello';
 $string['uploaduser'] = 'Tạo người dùng';
 $string['uploadcourse'] = 'Tạo khóa học';
 $string['tieude1'] = 'Tạo người dùng';
