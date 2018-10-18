@@ -2,7 +2,7 @@
  
 require_once('../../config.php');
 require_once('addfunctions_form.php');
-require_once($CFG->dirroot.'/mod/quiz/mod_form.php');
+// require_once($CFG->dirroot.'/mod/quiz/mod_form.php');
  
 global $DB, $OUTPUT, $PAGE;
 // Check for all required variables.
@@ -26,10 +26,10 @@ $settingsnode = $PAGE->settingsnav->add(get_string('themchucnangsettings', 'bloc
 $editurl = new moodle_url('/blocks/addfunctions/view.php', array('id' => $id, 'courseid' => $courseid, 'blockid' => $blockid));
 $editnode = $settingsnode->add(get_string('editpage', 'block_addfunctions'), $editurl);
 $editnode->make_active();
-//$output = $PAGE->get_renderer('block_themchucnang');
-//$renderable = new \block_themchucnang\output\index_page('Some text');
-//echo $OUTPUT->header();
-//echo $OUTPUT->render($renderable);
+$output = $PAGE->get_renderer('block_addfunctions');
+$renderable = new \block_addfunctions\output\index_page('Some text');
+echo $OUTPUT->header();
+echo $OUTPUT->render($renderable);
 //echo $OUTPUT->footer();
 $simplehtml = new addfunctions_form();
 //$course = $DB->get_record('course', array('id' => $courseid));
@@ -48,7 +48,7 @@ if($simplehtml->is_cancelled()) {
     // but for now we will just redirect back to the course main page.
     // $courseurl = new moodle_url('/course/view.php', array('id' => $courseid));
     // redirect($courseurl);
-    // print_object($simplehtml->get_file_content('filename'));
+    print_object($simplehtml->get_file_content('filename'));
     $user = $DB->get_records('question');
     print_object($user);
 } else {

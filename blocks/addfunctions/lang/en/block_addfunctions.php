@@ -9,17 +9,17 @@ $string['addfunctions'] = 'Tải tệp lên';
 // tiêu đề editform
 $string['tieudematdinh']='Tải tệp lên';
 $string['noidungmatdinh']='Đây là nội dung mặt định';
-// $string['headerconfig'] = 'one';
-// $string['descconfig'] = 'two';
-// $string['labelallowhtml']='three';
-// $string['descallowhtml'] = 'say hello';
+$string['headerconfig'] = 'Tải tệp lên';
+$string['descconfig'] = 'Cấu hình khối';
+$string['labelallowhtml']='Cho phép gán nhãn';
+$string['descallowhtml'] = 'Khi bạn gán nhãn sẽ thay đổi cấu hình khối.';
 $string['uploaduser'] = 'Tạo người dùng';
 $string['uploadcourse'] = 'Tạo khóa học';
 $string['tieude1'] = 'Tạo người dùng';
 $string['tieudetrang']= 'Thêm sinh viên vào khóa học';
 $string['themchucnangsettings']= 'Thiết lập trang';
 $string['editpage'] = 'Trang nhập danh sách sinh viên';
-$string['huongdan'] = 'Hướng dẫn thêm sinh viên';
+$string['huongdan'] = 'Hướng dẫn';
 
 
 $string['allowadditionalcssclasses'] = 'Allow additional CSS classes';
